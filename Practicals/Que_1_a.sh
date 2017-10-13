@@ -1,3 +1,7 @@
+# Experiment :- Write a shell script that accepts a file name, starting and ending line numbers as arguments and displays all the lines     #               between the given line numbers.
+
+
+
 #!/bin/bash
 echo "Enter the file name"
 read fname

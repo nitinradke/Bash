@@ -1,18 +1,13 @@
+# Experiment :- Write a shell script that displays a list of all the files in the current directory to which the user has read, 
+#              write and execute permissions.
 #!/bin/bash
-echo "Enter the directory name"
-read dir
-if [ -d $dir ]
-then
-cd $dir
 for i in *
 do
 if [ -f $i ];then
 	if [ -r $i -a -w $i -a -x $i ]
 	then
-		echo "File has read,write,exicute permissions"
-	else
-		echo "The file doesnot have read,write,exicute permissions"
+		echo "$i"
 	fi
 fi
 done
-fi
+
