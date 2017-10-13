@@ -1,3 +1,4 @@
+#Write a shell script to accept three numbers and display the largest.
 #!/bin/bash
 echo "Enter three numbers"
 read a
