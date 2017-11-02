@@ -3,26 +3,28 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-void typefile (char *filename)
+void print_content(char *filename)
 {
-int fd, nread;
-char buf[1024];
-fd = open(filename, O_RDONLY);
-if (fd == -1) {
-perror (filename);
-return;
-}
+	printf("\n%s:\n\n",filename);
+	FILE *fp;char c;
+	fp = fopen(filename,"r");
+	if(fp==NULL)
+	{
+		printf("\n\nfile not found");
+		exit(0);
+	}
 
-while ((nread = read (fd, buf, sizeof (buf))) > 0)
-write (1, buf, nread);
-close (fd);
+	while((c=fgetc(fp))!=EOF)
+		printf("%c",c);
+
+	fclose(fp);
 }
 
 
 int main (int argc, char **argv)
 {
-int argno;
-for (argno = 1; argno < argc; argno++  )
-typefile (argv[argno]);
-exit (0);
+	int i;
+	for (i= 1; i < argc;i++)
+		print_content(argv[i]);
+	return(0);
 }
