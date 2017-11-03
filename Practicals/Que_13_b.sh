@@ -1,6 +1,6 @@
 #!/bin/bash
 input='y'
-employee=/home/nitin/git/bash/Bash/Practicals/employee
+employee=/home/nitin/git/Bash/Practicals/employee
 while [ $input == 'y' ] || [ $input == 'Y' ] ;do
 	echo "Enter name,grade and salary of employee saperated by newline"
 	read name

@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include<stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 
-void print_content(char *filename)
+
+
+void copy_content(char *filename,char* filename2)
 {
-	printf("\n%s:\n\n",filename);
-	FILE *fp;char c;
+	//printf("\n%s:\n\n",filename);
+	FILE *fp,*fp1;char c;
 	fp = fopen(filename,"r");
+	fp1 = fopen(filename2,"w");
 	if(fp==NULL)
 	{
 		printf("\n\nfile not found");
@@ -15,16 +16,16 @@ void print_content(char *filename)
 	}
 
 	while((c=fgetc(fp))!=EOF)
-		printf("%c",c);
+		fputc(c,fp1);
 
 	fclose(fp);
+	fclose(fp1);
 }
 
 
 int main (int argc, char **argv)
 {
 	int i;
-	for (i= 1; i < argc;i++)
-		print_content(argv[i]);
+	copy_content(argv[1],argv[2]);
 	return(0);
 }
