@@ -1,3 +1,8 @@
+#Write a program that takes one or more file/directory names as command line input and reports the following information on the file.
+#a) File type.
+#b) Number of links.
+#c) Time of last access.
+#d) Read, Write and Execute permissions.
 #!/bin/bash
 
 for i in $*

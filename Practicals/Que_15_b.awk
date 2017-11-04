@@ -1,3 +1,6 @@
+#Write a shell script to calculate the total salary payable to all the employees from the employee file. The salary should be taken from
+#the 8th field of the employee file.
+
 BEGIN {print "   BS   DA    HRA    GP"}
 {
 da=0.25*$8

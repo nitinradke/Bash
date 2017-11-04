@@ -1,3 +1,7 @@
+# Write a shell script to accept the name, grade, and basic salary from the user. Write the details into a file called employee, separating
+# the fields with a colon (,) continue the process till the user wants.
+
+
 #!/bin/bash
 input='y'
 employee=/home/nitin/git/Bash/Practicals/employee

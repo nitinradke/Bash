@@ -1,3 +1,6 @@
+#Write a shell script to find the mode of a file in a directory.
+
+#!/bin/bash
 echo -n "Enter file name : "
 read file
 

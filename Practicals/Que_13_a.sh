@@ -1,3 +1,4 @@
+#Write a shell script to check if a particular user has logged in or not. If not, continue the loop till he/she logins. Once the required user logins, display a message.
 #!/bin/bash
 who="$(who)"
 DONE=0

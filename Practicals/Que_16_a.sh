@@ -1,3 +1,5 @@
+#Write a shell script to copy the source file to the target file.
+
 #!/bin/bash
 echo "enter name of source file"
 read s

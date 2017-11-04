@@ -1,3 +1,4 @@
+//Write a C program that demonstrates redirection of standard output to a file. Ex: ls > f1.
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

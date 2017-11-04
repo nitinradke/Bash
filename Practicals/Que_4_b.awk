@@ -1,3 +1,4 @@
+#Write an awk script to find the number of characters, words and lines in a file.
 BEGIN{num_char=0;num_words=0}
 {len=length($0)
 num_char+=len

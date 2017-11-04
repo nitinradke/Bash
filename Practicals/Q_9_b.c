@@ -1,3 +1,4 @@
+//Write a C program that illustrates how to execute two commands concurrently with a command pipe. Ex:- ls –l | sort
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
