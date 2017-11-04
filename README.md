@@ -1,6 +1,5 @@
 # NOTICE
-# Follow me if you are in github as i use to add projects in which you can also
-# contribute
+# Follow me if you are in github as i use to add projects in which you can also contribute
 
 
 ## Output of Experiments are added as per promise on 04/11/2017 at 11 am
