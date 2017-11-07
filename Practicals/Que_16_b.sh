@@ -1,8 +1,9 @@
 #Write a shell script to print the first 10 odd numbers using the while loop.
 
-sum=0
-for((i=1;i<=20;i+=1))
+i=0
+while [ $i -lt 22 ]
 do
-	sum=`expr $sum + $i`
+	let i=i+2
+	echo "$i"
 done
-echo "The sum of first 10 odd numbers are: $sum"
+
